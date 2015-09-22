@@ -14,7 +14,7 @@ gulp.task('update-revision', function () {
   var revision;
 
   // get rev from the git
-  revision = execSync('gits rev-parse HEAD').stdout.toString().trim();
+  revision = execSync('git rev-parse HEAD').stdout.toString().trim();
 
   if (!revision) {
     // create rev from the current date
