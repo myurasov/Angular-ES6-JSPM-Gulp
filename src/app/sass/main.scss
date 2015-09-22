@@ -1,0 +1,18 @@
+/**
+* Main SCSS file
+*/
+
+* {
+  font-family: monospace;
+}
+
+//noinspection SassScssUnresolvedVariable
+body:before {
+  content: "$environment: #{$environment}";
+  display: block;
+}
+
+//noinspection SassScssUnresolvedVariable
+body:after {
+  content: "$revision: #{$revision}";
+}

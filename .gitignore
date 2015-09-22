@@ -1,0 +1,7 @@
+/.idea/
+/revision
+/environment
+/node_modules/
+/src/app/vendor/jspm_packages/
+/src/app/build/
+/src/app/scripts/_*.js

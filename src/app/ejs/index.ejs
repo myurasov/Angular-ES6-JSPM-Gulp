@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="build/main.css?<%= revision %>">
+  <title>__project__</title>
+</head>
+<body>
+
+  <% if (environment === 'development') { %>
+    <script src="vendor/jspm_packages/system.js"></script>
+    <script src="vendor/jspm_packages/system.config.js"></script>
+    <script>System.import('scripts/app.js')</script>
+  <% } else { %>
+    <script src="build/build.js?<%= revision %>"></script>
+  <% } %>
+
+</body>
+</html>
