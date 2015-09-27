@@ -22,5 +22,5 @@ gulp.task('update-revision', function () {
   }
 
   fs.writeFileSync(config.paths.root + '/revision', revision); // global
-  fs.writeFileSync(config.paths.app + '/scripts/_revision.js', 'export const revision="' + revision + '";'); // js
+  fs.writeFileSync(config.paths.app + '/scripts/_revision.js', 'export default "' + revision + '";'); // js
 });

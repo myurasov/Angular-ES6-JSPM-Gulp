@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
-import {environment} from './_environment.js';
-import {revision} from './_revision.js';
+import environment from './_environment.js';
+import revision from './_revision.js';
 
 class Greeter {
   constructor(greeting) {

@@ -11,7 +11,7 @@ var config = require('../config');
 function setEnvironment(environment) {
   // save environment
   fs.writeFileSync(config.paths.root + '/environment', environment); // global
-  fs.writeFileSync(config.paths.app + '/scripts/_environment.js', 'export const environment="' + environment + '";'); // js
+  fs.writeFileSync(config.paths.app + '/scripts/_environment.js', 'export default "' + environment + '";'); // js
 
   // set NODE_ENV
   process.env.NODE_ENV = environment;
