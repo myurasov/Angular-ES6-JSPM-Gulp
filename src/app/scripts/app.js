@@ -9,12 +9,12 @@ var app = angular.module('app', ['ui.router']);
 
 app.config(($stateProvider, $urlRouterProvider) => {
 
-  $urlRouterProvider.otherwise('/aaa');
+  $urlRouterProvider.otherwise('/');
 
   $stateProvider
 
     .state('home', {
-      url  : '/aaa',
+      url  : '/',
       views: {
         content: {
           template  : '{{ greeting }}!',
