@@ -33,5 +33,5 @@ exports.templates = {
     filename: '_templates.js',
     standalone: true
   },
-  dest: exports.paths.app
+  dest: exports.paths.app + '/scripts'
 };

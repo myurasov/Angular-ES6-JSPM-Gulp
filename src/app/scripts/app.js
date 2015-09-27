@@ -4,7 +4,7 @@
 
 import 'angular';
 import 'angular-ui-router';
-import templatesModule from './build/templates';
+import templatesModule from './_templates';
 
 var app = angular.module('app', ['ui.router', templatesModule.name]);
 
