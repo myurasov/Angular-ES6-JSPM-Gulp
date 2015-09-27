@@ -1,18 +1,18 @@
 /**
-* Main SCSS file
-*/
+ * Main SCSS file
+ */
+
+*[ng-cloak] {
+  display: none;
+}
 
 * {
   font-family: monospace;
 }
 
 //noinspection SassScssUnresolvedVariable
-body:before {
-  content: "$environment: #{$environment}";
-  display: block;
-}
-
-//noinspection SassScssUnresolvedVariable
 body:after {
-  content: "$revision: #{$revision}";
+  display: block;
+  margin-top: 10px;
+  content: "$environment: #{$environment} / $revision: #{$revision}";
 }

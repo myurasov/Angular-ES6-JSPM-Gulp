@@ -34,7 +34,8 @@
     },
     "configFile": "src/app/scripts/system.config.js",
     "dependencies": {
-      "angular": "github:angular/bower-angular@^1.4.6"
+      "angular": "github:angular/bower-angular@^1.4.6",
+      "angular-ui-router": "github:angular-ui/ui-router@^0.2.15"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
