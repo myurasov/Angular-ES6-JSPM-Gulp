@@ -10,7 +10,7 @@
 
   <% if (environment === 'development') { %>
     <script src="vendor/jspm_packages/system.js"></script>
-    <script src="vendor/jspm_packages/system.config.js"></script>
+    <script src="scripts/system.config.js"></script>
     <script>System.import('scripts/app.js')</script>
   <% } else { %>
     <script src="build/build.js?<%= revision %>"></script>
