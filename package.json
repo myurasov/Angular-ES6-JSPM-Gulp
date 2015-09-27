@@ -29,7 +29,7 @@
       "baseURL": "src/app",
       "packages": "src/app/vendor/jspm_packages"
     },
-    "configFile": "src/app/vendor/jspm_packages/system.config.js",
+    "configFile": "src/app/scripts/system.config.js",
     "dependencies": {
       "lodash": "npm:lodash@^3.10.1"
     },
