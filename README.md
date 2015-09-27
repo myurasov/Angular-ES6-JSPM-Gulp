@@ -41,7 +41,8 @@ Featuring
 git clone https://github.com/myurasov/Angular-ES6-JSPM-Gulp-Boilerplate.git myapp
 cd myapp
 npm install
-jspm update
+jspm install
+gulp
 ```
 
 ### Live Reload
