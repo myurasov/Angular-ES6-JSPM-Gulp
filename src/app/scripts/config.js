@@ -2,7 +2,7 @@
  * App configuration
  */
 
-export default ($stateProvider, $urlRouterProvider) => {
+export default /* @ngInject */ ($stateProvider, $urlRouterProvider) => {
 
   $urlRouterProvider.otherwise('/');
 
@@ -13,7 +13,7 @@ export default ($stateProvider, $urlRouterProvider) => {
       views: {
         content: {
           templateUrl: 'scripts/home-view.html',
-          controller : ($scope) => {
+          controller : /* @ngInject */ ($scope) => {
             $scope.greeting = 'Hello world';
           }
         }
