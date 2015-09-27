@@ -20,6 +20,8 @@
     "gulp-sass": "^2.0.4",
     "gulp-shell": "^0.4.3",
     "gulp-sourcemaps": "^1.5.2",
+    "jspm": "^0.16.9",
+    "jspm-bower-endpoint": "^0.3.2",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.3",
     "strip-json-comments": "^1.0.4",
@@ -35,8 +37,9 @@
       "lodash": "npm:lodash@^3.10.1"
     },
     "devDependencies": {
-      "traceur": "github:jmcriffey/bower-traceur@0.0.91",
-      "traceur-runtime": "github:jmcriffey/bower-traceur-runtime@0.0.91"
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
     }
   }
 }
