@@ -20,7 +20,7 @@ app.config(($stateProvider, $urlRouterProvider) => {
       url  : '/',
       views: {
         content: {
-          template  : '{{ greeting }}!',
+          templateUrl: 'scripts/home-view.html',
           controller: ($scope) => {
             $scope.greeting = 'Hello world';
           }
