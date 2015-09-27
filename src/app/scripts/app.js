@@ -7,6 +7,8 @@ import 'angular-ui-router';
 
 var app = angular.module('app', ['ui.router']);
 
+// configure app
+
 app.config(($stateProvider, $urlRouterProvider) => {
 
   $urlRouterProvider.otherwise('/');
@@ -26,6 +28,8 @@ app.config(($stateProvider, $urlRouterProvider) => {
     });
 
 });
+
+// bootstrap app
 
 angular.element(document).ready(function() {
   angular.bootstrap(document, [app.name]);
