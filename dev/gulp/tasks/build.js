@@ -15,6 +15,7 @@ gulp.task('build:development', function (callback) {
     'compile-ejs',
     'compile-sass',
     'compile-templates',
+    'post-build',
     callback
   );
 });
@@ -29,6 +30,7 @@ gulp.task('build:test', function (callback) {
     'compile-templates',
     'compile-scripts',
     'optimize-assets',
+    'post-build',
     callback
   );
 });
@@ -43,6 +45,7 @@ gulp.task('build:staging', function (callback) {
     'compile-templates',
     'compile-scripts',
     'optimize-assets',
+    'post-build',
     callback
   );
 });
@@ -57,6 +60,7 @@ gulp.task('build:production', function (callback) {
     'compile-templates',
     'compile-scripts',
     'optimize-assets',
+    'post-build',
     callback
   );
 });
