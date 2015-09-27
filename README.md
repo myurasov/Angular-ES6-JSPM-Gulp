@@ -38,8 +38,8 @@ Featuring
 ### Installation
 
 ```
-git clone myapp://github.com/myurasov/Angular-ES6-JSPM-Gulp-Boilerplate.git myapp
-cd chromestrap
+git clone https://github.com/myurasov/Angular-ES6-JSPM-Gulp-Boilerplate.git myapp
+cd myapp
 npm install
 jspm update
 ```
