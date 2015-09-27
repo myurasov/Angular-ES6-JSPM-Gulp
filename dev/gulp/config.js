@@ -28,7 +28,11 @@ exports.compileScripts = {
 };
 
 exports.templates = {
-  src: [exports.paths.app + '/**/*.html', '!/**/vendor/**/', '!' + exports.paths.app_build + '/**'],
+  src: [
+    exports.paths.app + '/**/*.html', '!/**/vendor/**/',
+    '!' + exports.paths.app_build + '/**',
+    '!' + exports.paths.app + '/index.html'
+  ],
   options: {
     filename: '_templates.js',
     standalone: true
