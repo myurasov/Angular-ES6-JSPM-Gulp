@@ -11,4 +11,5 @@
   gulp.task('cleanup', function () {
     del.sync(config.paths.app_build);
     del.sync(config.paths.app + '/scripts/_*.js');
+    del.sync(config.paths.app + '/index.html');
 });

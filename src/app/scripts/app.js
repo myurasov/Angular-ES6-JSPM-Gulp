@@ -1,18 +1,23 @@
-import _ from 'lodash';
+/**
+ * Main application file
+ */
 
-import environment from './_environment.js';
-import revision from './_revision.js';
+import 'angular';
+import 'angular-ui-router';
 
-class Greeter {
-  constructor(greeting) {
-    this.greeting = greeting;
-  }
+import config from './config';
+import templatesModule from './_templates';
 
-  sayHello() {
-    console.log(this.greeting);
-    console.log(environment);
-    console.log(revision);
-  }
-}
+// define app module
+var app = angular.module('app', [
+  'ui.router',
+  templatesModule.name
+]);
 
-(new Greeter('Ahoy!')).sayHello();
+// configure app
+app.config(config);
+
+// bootstrap app
+angular.element(document).ready(function() {
+  angular.bootstrap(document, [app.name]);
+});

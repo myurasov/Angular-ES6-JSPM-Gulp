@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="build/main.css?<%= revision %>">
   <title>__project__</title>
 </head>
-<body>
+<body ng-cloak>
+
+  <div ui-view="content"></div>
 
   <% if (environment === 'development') { %>
     <script src="vendor/jspm_packages/system.js"></script>

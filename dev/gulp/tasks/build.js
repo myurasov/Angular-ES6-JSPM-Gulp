@@ -14,6 +14,8 @@ gulp.task('build:development', function (callback) {
     'update-revision',
     'compile-ejs',
     'compile-sass',
+    'compile-templates',
+    'post-build',
     callback
   );
 });
@@ -25,8 +27,10 @@ gulp.task('build:test', function (callback) {
     'update-revision',
     'compile-ejs',
     'compile-sass',
+    'compile-templates',
     'compile-scripts',
     'optimize-assets',
+    'post-build',
     callback
   );
 });
@@ -38,8 +42,10 @@ gulp.task('build:staging', function (callback) {
     'update-revision',
     'compile-ejs',
     'compile-sass',
+    'compile-templates',
     'compile-scripts',
     'optimize-assets',
+    'post-build',
     callback
   );
 });
@@ -51,8 +57,10 @@ gulp.task('build:production', function (callback) {
     'update-revision',
     'compile-ejs',
     'compile-sass',
+    'compile-templates',
     'compile-scripts',
     'optimize-assets',
+    'post-build',
     callback
   );
 });

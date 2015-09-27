@@ -11,8 +11,7 @@ gulp.task('compile-scripts', (function () {
 
   var command = 'jspm bundle-sfx ' + // create self-sufficient bundle
                 utils.escapeShellArg(config.compileScripts.src) + ' ' + // source
-                utils.escapeShellArg(config.compileScripts.dest) + // dest
-                ' -m'; // minify
+                utils.escapeShellArg(config.compileScripts.dest); // dest
 
   return gulpShell.task([command]);
 })());
