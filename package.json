@@ -33,6 +33,9 @@
       "packages": "src/app/vendor/jspm_packages"
     },
     "configFile": "src/app/scripts/system.config.js",
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.6"
+    },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
       "babel-runtime": "npm:babel-runtime@^5.8.24",
