@@ -26,3 +26,12 @@ exports.compileScripts = {
   src: exports.paths.app + '/scripts/app.js',
   dest: exports.paths.app_build + '/build.js'
 };
+
+exports.templates = {
+  src: [exports.paths.app + '/**/*.html', '!/**/vendor/**/', '!' + exports.paths.app_build + '/**'],
+  options: {
+    filename: '_templates.js',
+    standalone: true
+  },
+  dest: exports.paths.app
+};
