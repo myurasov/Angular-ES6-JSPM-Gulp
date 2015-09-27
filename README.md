@@ -79,7 +79,7 @@ After the build the app can be served from __src/app__ directory.
 |`gulp build:production`|Build for the __production__ environment|
 |`gulp compile-ejs`|Compile EJS files|
 |`gulp compile-sass`|Compile SASS files|
-|`gulp comiple-scripts`|Compile scripts. Creates self-sufficient bundle (except for __development__ environment)|
+|`gulp compile-scripts`|Compile scripts. Creates self-sufficient bundle (except for __development__ environment)|
 |`gulp compile-templates`|Compile templates into cache. In __development__ templates are not cached.|
 |`gulp optimize-asssets`|Optimize assets|
 |`gulp post-build`|Perform post-build steps|
