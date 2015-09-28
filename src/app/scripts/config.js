@@ -14,7 +14,7 @@ export default /* @ngInject */ ($stateProvider, $urlRouterProvider) => {
         content: {
           templateUrl: 'scripts/home-view.html',
           controller : /* @ngInject */ ($scope) => {
-            $scope.greeting = 'Hello world';
+            $scope.greeting = 'Ahoy';
           }
         }
       }
